@@ -70,8 +70,7 @@ It includes a dedicated **Launch System** (`checker.py`) that scans your environ
 ### Setup
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/0xDownloader.git
-
+   git clone https://github.com/Non-Lo-S0/0xDownloader.git
 
 <h1 align="center">⚡ 0xDownloader</h1>
 
@@ -102,7 +101,7 @@ It includes a dedicated **Launch System** (`checker.py`) that scans your environ
 <h2>🚀 Installation</h2>
 
 <pre>
-git clone https://github.com/&lt;your-username&gt;/0xDownloader.git
+git clone https://github.com/&lt;Non-Lo-S0&gt;/0xDownloader.git
 </pre>
 
 <h2>▶️ Usage</h2>
@@ -131,4 +130,5 @@ git clone https://github.com/&lt;your-username&gt;/0xDownloader.git
 <p align="center">
   <i>IMore sites supports in the future :)</i>
 </p>
+
 
