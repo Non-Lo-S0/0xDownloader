@@ -108,7 +108,7 @@ git clone https://github.com/Non-Lo-S0/0xDownloader.git
 <h2>▶️ Usage</h2>
 
 <ol>
-  <li>Run <code>python main.py</code> (it will trigger the checker and updater if needed) or run the .exe file if you don't want check updates of dependences.</li>
+  <li>Run <code>python main.py</code> (it will trigger the checker and updater if needed).</li>
   <li>Paste a YouTube URL in the input field.</li>
   <li>Click <b>⚡ ANALYZE</b> and select the desired quality (video or audio).</li>
   <li>Watch progress, then click <b>📂 OPEN FOLDER</b> when the download is complete.</li>
@@ -133,6 +133,7 @@ git clone https://github.com/Non-Lo-S0/0xDownloader.git
 <p align="center">
   <i>More sites supports in the future :)</i>
 </p>
+
 
 
 
