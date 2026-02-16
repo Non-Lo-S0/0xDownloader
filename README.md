@@ -40,7 +40,6 @@ It includes a dedicated **Launch System** (`checker.py`) that scans your environ
 ---
 
 <div id="key-features"></div>
-
 ## ✨ Key Features
 
 ### 🛡️ Smart Dependency Management
@@ -60,7 +59,6 @@ It includes a dedicated **Launch System** (`checker.py`) that scans your environ
 ---
 
 <div id="installation"></div>
-
 ## ⚙️ Installation
 
 ### Prerequisites
@@ -106,6 +104,7 @@ git clone https://github.com/Non-Lo-S0/0xDownloader.git
 </pre>
 <p>FFMPEG: download it from the official site and copy the ffmpeg.exe file in the PATH</p>
 
+<div id="usage"></div>
 <h2>▶️ Usage</h2>
 
 <ol>
@@ -115,16 +114,18 @@ git clone https://github.com/Non-Lo-S0/0xDownloader.git
   <li>Watch progress, then click <b>📂 OPEN FOLDER</b> when the download is complete.</li>
 </ol>
 
+<div id="structure"></div>
 <h2>⚙️ Structure</h2>
 
 <ul>
+  <li><code>main.py</code> – entry point that coordinates checker and GUI startup.</li>
   <li><code>config.py</code> – global settings (window, colors, layout, engine parameters).</li>
   <li><code>interface.py</code> – main Tkinter GUI and user interactions.</li>
   <li><code>logic.py</code> – download core using <code>yt-dlp</code>, progress & throttling.</li>
   <li><code>utils.py</code> – filesystem helpers, logging bridge, cleanup utilities.</li>
   <li><code>checker.py</code> – splash launcher, PIP and dependency scanner.</li>
   <li><code>updater.py</code> – auto-updater UI and package installation logic.</li>
-  <li><code>main.py</code> – entry point that coordinates checker and GUI startup.</li>
+  <li><code>modules/youtube.py</code> – Metadata extractor that parses video formats and resolutions via <code>yt-dlp</code> JSON dump.</li>
 </ul>
 
 <hr>
@@ -132,6 +133,7 @@ git clone https://github.com/Non-Lo-S0/0xDownloader.git
 <p align="center">
   <i>IMore sites supports in the future :)</i>
 </p>
+
 
 
 
