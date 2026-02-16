@@ -94,15 +94,16 @@ It includes a dedicated **Launch System** (`checker.py`) that scans your environ
 <h2>📦 Requirements</h2>
 
 <ul>
-  <li>Python 3.10+ (recommended)</li>
+  <li>Python 3.8+ (recommended)</li>
   <li><code>yt-dlp</code>, <code>ffmpeg</code>, and other packages from <code>requirements.txt</code></li>
 </ul>
 
 <h2>🚀 Installation</h2>
 
 <pre>
-git clone https://github.com/&lt;Non-Lo-S0&gt;/0xDownloader.git
+git clone https://github.com/Non-Lo-S0/0xDownloader.git
 </pre>
+<p>FFMPEG: download it from the official site and copy the ffmpeg.exe file in the PATH</p>
 
 <h2>▶️ Usage</h2>
 
@@ -130,5 +131,6 @@ git clone https://github.com/&lt;Non-Lo-S0&gt;/0xDownloader.git
 <p align="center">
   <i>IMore sites supports in the future :)</i>
 </p>
+
 
 
