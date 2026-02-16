@@ -2,7 +2,8 @@
 
   <!-- PROJECT LOGO -->
   <br />
-  <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="Logo" width="100" height="100">
+  <img width="100" height="100" alt="logo" src="https://github.com/user-attachments/assets/6ce8896e-793d-4055-87bc-fe8bdbdc0e11" />
+
   
   <h1 align="center">0xDownloader</h1>
 
@@ -131,6 +132,7 @@ git clone https://github.com/Non-Lo-S0/0xDownloader.git
 <p align="center">
   <i>IMore sites supports in the future :)</i>
 </p>
+
 
 
 
