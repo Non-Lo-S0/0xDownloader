@@ -71,7 +71,6 @@ It includes a dedicated **Launch System** (`checker.py`) that scans your environ
 1. **Clone the repository**
    ```bash
    git clone https://github.com/yourusername/0xDownloader.git
-   cd 0xDownloader
 
 
 <h1 align="center">⚡ 0xDownloader</h1>
@@ -130,5 +129,6 @@ git clone https://github.com/&lt;your-username&gt;/0xDownloader.git
 <hr>
 
 <p align="center">
-  <i>I will implements more site supports in the future</i>
+  <i>IMore sites supports in the future :)</i>
 </p>
+
