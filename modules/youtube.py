@@ -9,7 +9,6 @@ class YouTubeVideoHandler:
         self.title = "Unknown"
 
     def fetch_info(self):
-        """Recupera metadati e risoluzioni usando yt-dlp --dump-json"""
         cmd = [
             "yt-dlp", 
             self.url, 
@@ -50,14 +49,13 @@ class YouTubeVideoHandler:
         return sorted_resolutions, self.title
 
     def get_format_id_for_resolution(self, resolution):
-        """Ritorna l'ID del formato video per la risoluzione scelta"""
         return self.formats_map.get(resolution, "best")
     
     @property
     def yt_obj(self):
-        """Compatibility property per mantenere il codice esistente nel main"""
         class InfoContainer:
             def __init__(self, title):
                 self.title = title
 
         return InfoContainer(self.title)
+
