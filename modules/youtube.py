@@ -5,7 +5,7 @@ class YouTubeVideoHandler:
     def __init__(self, url):
         self.url = url
         self.video_info = {}
-        self.formats_map = {} # Mappa '1080p' -> 'format_id' (es. '137')
+        self.formats_map = {}
         self.title = "Unknown"
 
     def fetch_info(self):
@@ -17,7 +17,6 @@ class YouTubeVideoHandler:
             "--no-playlist"
         ]
         
-        # Esegui comando (subprocess, come in downloader.py)
         process = subprocess.run(
             cmd, 
             capture_output=True, 
@@ -31,23 +30,17 @@ class YouTubeVideoHandler:
         self.video_info = json.loads(process.stdout)
         self.title = self.video_info.get("title", "Video senza titolo")
         
-        # Estrai formati video
         formats = self.video_info.get("formats", [])
         self.formats_map = {}
         
         for f in formats:
-            # Filtra solo video validi con risoluzione
             height = f.get("height")
             vcodec = f.get("vcodec")
             
-            # Escludiamo video senza codec o audio-only per la mappa risoluzioni
             if height and vcodec != "none":
                 res_key = f"{height}p"
-                # yt-dlp ordina dal peggiore al migliore, quindi sovrascrivendo
-                # teniamo l'ID con bitrate migliore per quella risoluzione
                 self.formats_map[res_key] = f["format_id"]
 
-        # Ordina le risoluzioni (dalla più alta alla più bassa)
         sorted_resolutions = sorted(
             self.formats_map.keys(), 
             key=lambda x: int(x.replace('p', '')), 
@@ -66,4 +59,5 @@ class YouTubeVideoHandler:
         class InfoContainer:
             def __init__(self, title):
                 self.title = title
+
         return InfoContainer(self.title)
